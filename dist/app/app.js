@@ -17,10 +17,11 @@ const fetchWeather = async () => {
         const { speed } = data.wind;
 
         let displayWeather =
+            // convert temp from kalvin to Celsius
             `<div class="main-info">
         <h2 class="location">${name}</h2>
         <div class="location-weather-info">
-            <p class="temperature">${temp}°</p>
+            <p class="temperature">${temp - 273}°C</p>
             <span class="weather-icon">
                 <figure>
                     <img src="https://openweathermap.org/img/wn/${icon}.png" alt="weather icon">
