@@ -21,7 +21,7 @@ const fetchWeather = async () => {
             `<div class="main-info">
         <h2 class="location">${name}</h2>
         <div class="location-weather-info">
-            <p class="temperature">${temp - 273}°C</p>
+            <p class="temperature">${Math.floor(temp - 273)}°C</p>
             <span class="weather-icon">
                 <figure>
                     <img src="https://openweathermap.org/img/wn/${icon}.png" alt="weather icon">
