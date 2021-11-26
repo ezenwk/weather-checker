@@ -17,7 +17,7 @@ const fetchWeather = async () => {
         const { speed } = data.wind;
 
         let displayWeather =
-            // convert temp from kalvin to Celsius
+            // convert temp from kalvin to Celsius and floor
             `<div class="main-info">
         <h2 class="location">${name}</h2>
         <div class="location-weather-info">
