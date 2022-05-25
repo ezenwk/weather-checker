@@ -8,7 +8,7 @@ const fetchWeather = async () => {
     // fetch data using openweather api
     const city = document.querySelector("#search-input").value;
     const res = await fetch(
-      `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=471b048301da8447e5d6bdafb59e30cc`
+      `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=698e0831aeec7951bef21374efab24d4`
     );
     const data = await res.json();
 
